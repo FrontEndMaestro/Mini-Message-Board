@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Details</title>
+    <link rel="stylesheet" type="text/css" href="/details.styles.css" />
+  </head>
+  <body>
+    <div class="details-container">
+      <h1>Message Details</h1>
+      <div class="details-card">
+        <div class="detail-field">
+          <span class="detail-label">Username</span>
+          <div class="detail-value"><%= messages[index].user %></div>
+        </div>
+        <div class="detail-field">
+          <span class="detail-label">Message</span>
+          <div class="detail-value"><%= messages[index].text%></div>
+        </div>
+        <div class="detail-field">
+          <span class="detail-label">Date Sent</span>
+          <div class="detail-value"><%=messages[index].added %></div>
+        </div>
+      </div>
+      <a href="/" class="back-link">← Back to Messages</a>
+    </div>
+  </body>
+</html>
