@@ -32,11 +32,11 @@ indexRouter.post("/new", (req, res) => {
 });
 
 indexRouter.get("/details", (req, res) => {
-  console.log(req.query);
   res.render("details", { index: req.query.index, messages: messages });
 });
 
 indexRouter.use((err, req, res, next) => {
+  console.log("inside error");
   console.log(err);
 });
 

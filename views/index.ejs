@@ -13,7 +13,7 @@
         <div class="message-card">
           <div class="message-user"><%= message.user %></div>
           <div class="message-text"><%= message.text %></div>
-          <div class="message-date"><%= message.added %></div>
+          <div class="message-date"><%= message.added.toDateString() %></div>
           <a href="/details?index=<%=index%>" class="message-link">Open</a>
         </div>
       <% }) %>
