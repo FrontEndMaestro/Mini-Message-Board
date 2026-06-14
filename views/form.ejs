@@ -6,6 +6,8 @@
   <body>
     <form method="POST" action="/new">
       <h1>New Message</h1>
+
+      <%- include("partialerror.ejs") %>
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required />

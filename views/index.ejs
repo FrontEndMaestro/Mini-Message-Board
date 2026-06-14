@@ -11,12 +11,14 @@
     <div class="messages-container">
       <% messages.forEach((message,index)=>{ %>
         <div class="message-card">
-          <div class="message-user"><%= message.user %></div>
+          <div class="message-user"><%= message.username %></div>
           <div class="message-text"><%= message.text %></div>
           <div class="message-date"><%= message.added.toDateString() %></div>
-          <a href="/details?index=<%=index%>" class="message-link">Open</a>
+          <a href="/details?id=<%=message.id%>" class="message-link">Open</a>
         </div>
       <% }) %>
     </div>
   </body>
 </html>
+
+<!--postgresql://neondb_owner:npg_SrH3X8BKjAMN@ep-super-bar-atr7lcq7.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require-->
